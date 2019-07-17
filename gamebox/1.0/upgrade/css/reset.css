@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+/* ============================ 重置css样式 ============================ */    
+html, body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td { margin: 0; padding: 0;  *margin: 0!important;
+ *padding: 0!important;
+}
+body { font-family: Tahoma; overflow: hidden; }
+body, button, input, select, textarea { font-size: 12px; }
+h1 { font-size: 18px; }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+em { font-style: normal; }
+ul, ol { list-style: none; }
+a { text-decoration: none; cursor: pointer; outline: 0;  blr:expression(this.onFocus=this.blur());
+outline: none; text-decoration: none; }
+a:hover { text-decoration: none }
+/* 重置表单元素 */
+legend { color: #000; }
+fieldset, img { border: none; }
+/* 重置表格元素 */
+table { border-collapse: collapse; border-spacing: 0; }
+button, input, select, textarea { font-size: 100%; }
+/* ========================= 页面常用样式 CSS样式 =========================== */    
+
+area {
+blr:expression(this.onFocus=this.blur()); outline: none; }
+img { border: 0px; vertical-align: top; }
+em, i { font-style: normal; }
+input, div { outline: none; }
+input:focus, div:focus { outline: none; }
+textarea:focus { outline: none; }
+ul li, dl dd, dl dt { list-style-type: none; }
+.f_left { float: left; }
+.clear { clear: both; height: 0px; overflow: hidden; }
+.hide { display: none; }
+.autoHeight { height: auto!important; min-height: 0px; height: 0px; }
+.autoHeight:after { display: block; clear: both; content: "."; visibility: hidden; height: 0; }

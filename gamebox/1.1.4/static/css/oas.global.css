@@ -1,0 +1,451 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+*@ ue 前缀 
+*@ author : gaoshiyong<gaoshiyong1272@vip.163.com>
+*/
+html { height: 100%; }
+body { height: 100%; margin: 0; font: normal 12px/1.5 Tahoma, Arial; color: #000; overflow-x: hidden; }
+p, li, ul, ol, h1, h2, h3, h4, h5, h6, dl, dd, dt, img, a, div, td { margin: 0px; padding: 0px; border: 0px; word-wrap: break-word; word-break: normal; list-style: none; }
+input, textarea, select { margin: 0px; padding: 0px; font-size: 12px; font-family: Tahoma }
+* { padding: 0; margin: 0; }
+script { display: none!important; font-size: 0!important;}
+em, font, i { font-size: 12px; font-weight: normal; font-style: normal; }
+textarea { resize: none }
+h1, h2, h3, h4, h5, h6 { font-family: Tahoma, Arial; }
+li { list-style: none; }
+a { color: #000; text-decoration: none; noFocusLine:expression(this.onFocus=this.blur());
+outline: none; -moz-outline-style: none; -webkit-outline-style: none }
+a * { cursor: pointer; }
+a:active { color: #68749b; }
+a:hover { color: #fff; text-decoration: underline; }
+.underLine, .underLine:hover { text-decoration: none; }
+a.subLink, .subLink { color: #68749b }
+.subText, .subtext { color: #777; }
+.center { text-align: center; }
+.centerL { text-align: left; }
+.centerR { text-align: right; }
+.clear { clear: both; height: 0px; overflow: hidden; visibility: hidden; }
+.fL { float: left!important; _display: inline; }
+.fR { float: right!important; _display: inline; }
+.fB { font-weight: bold; }
+.fn14 { font-size: 14px!important; }
+.fn16 { font-size: 14px!important; }
+.nobg { background: none!important; }
+.noborB { border-bottom: 0px!important;}
+.noborT { border-top: 0px!important; }
+.noborL { border-left: 0px!important; }
+.noborR { border-right: 0px!important; }
+.nobor { border: 0px!important; }
+.nomarR { margin-right: 0px!important; }
+.mar_t15 { margin-top: 15px!important; }
+.mar_t10 { margin-top: 10px!important; }
+.pad_l0 { padding-left: 0!important; }
+.gb-indent { text-indent: 2em; }
+.gb-loading { /*width: 110px; */height:30px;line-height: 30px;position: absolute;left: 50%;top: 50%;margin-top: -15px;margin-left: -55px;}
+.gb-smallload { height: 100%; width: 100%; }
+#gb-smallload-load { position: fixed; _position: absolute; top: 0; left: 50%; border: 1px solid #ccc; padding: 3px 10px; font-size: 14px; line-height: 1.75em; border-top: 0; background: #eee; }
+#oas-body-right-ads { position: absolute; top: 10px; left: 810px; width:220px; height: 660px; }
+
+
+
+/**按钮区域**/
+a.gb-btn-gray, a.gb-btn-gray span, a.gb-btn-orange, a.gb-btn-green span, a.gb-btn-green, a.gb-btn-orange span, a.gb-btn-blue, a.gb-btn-blue span, a.gb-btn-orange-nobg, a.gb-btn-orange-nobg span { display: inline-block; vertical-align: top; border-radius: 3px; }
+a.gb-btn-gray span, a.gb-btn-orange span, a.gb-btn-green span, a.gb-btn-blue span, a.gb-btn-orange-nobg span { border: 1px solid #b9b9b9; line-height: 1.25em; padding: 0.4em 1.5em 0.5em; box-shadow: inset 2px 2px 2px #fff; }
+a.gb-btn-gray em, a.gb-btn-orange em, a.gb-btn-green em, a.gb-btn-blue em, a.gb-btn-orange-nobg em { font-size: 1em; display: inline-block; font-size: 1em; line-height: 1.3em; cursor: pointer; vertical-align: top; }
+a.gb-btn-3em span { padding: 0.5em 4em; }
+
+a.gb-btn-green { background-color: #45b51e; color: #fff; }
+a.gb-btn-green span { box-shadow: inset 0px 1px 1px #39DA01; border: 1px solid #359810; }
+a.gb-btn-green span em { font-size: 16px; }
+a.gb-btn-green:hover { background-color: #53ce28; }
+a.gb-btn-green:hover span { box-shadow: inset 0px 1px 1px #42EE06; }
+a.gb-btn-green:active { background-color: #329510; }
+a.gb-btn-green:active span { box-shadow: inset 0px 1px 4px #25630f; border: 1px solid #fff; }
+
+a.gb-btn-gray { background-color: #aeaeae; color: #fff; cursor: default; }
+a.gb-btn-gray span { box-shadow: inset 0px 1px 1px #cecece; border: 1px solid #959595;cursor: default;  }
+a.gb-btn-gray span em { font-size: 16px; cursor: default; }
+a.gb-btn-gray:hover { background-color: #aeaeae; color: #fff; }
+a.gb-btn-gray:hover span { box-shadow: inset 0px 1px 1px #cecece; border: 1px solid #959595; }
+a.gb-btn-gray:active { background-color: #aeaeae; color: #fff; }
+a.gb-btn-gray:active span { box-shadow: inset 0px 1px 1px #cecece; border: 1px solid #959595; }
+
+
+/**图标区域**/
+.gb-i { display: inline-block; vertical-align: top; font-style: normal; width: 16px; height: 16px; overflow: hidden; background-image: url('../images/gb-css.png'); background-position: -9999px; background-repeat: no-repeat; _background-image: url('../images/gb-css.gif'); }
+.gb-confirm { background-position: 2px 2px; cursor: pointer; }
+.gb-noconfirm { background-position: -36px 2px ; cursor: pointer;}
+.gb-selected{ background-position: 2px -900px;}
+.gb-unselected{ background-position: -33px -900px; cursor: default;}
+.gb-recentuser { background-position: 0px -451px; }
+.gb-recommengame { background-position: -2px -499px; }
+.gb-cup { background-position: 0px -550px; }
+/*小游戏标签*/
+.gb-small{ background:url(../images/oas-game.png) no-repeat; width:16px; height:16px;}
+/*小游戏标签end*/
+.gb-edit { background-position: 2px -150px; cursor: pointer; }
+.gb-oas { background-position: 0px -190px; width: 18px; height: 36px; }
+.gb-facebook { background-position: 0px -242px; width: 18px; height: 36px; }
+.gb-google { background-position: 0px -290px; width: 18px; height: 36px; }
+.gb-dialog-oas { background-position: 0px -200px;width: 18px;height: 18px;}
+.gb-dialog-facebook { background-position: 0px -250px;width: 18px;height: 18px;}
+.gb-dialog-google { background-position: 0px -300px;width: 18px;height: 18px;}
+
+
+
+/**确认框**/
+.gb-outside-box { z-index: 1; background: #e4e4e4; }
+.gb-confirm-box { width: 300px; height: 140px; }
+.gb-confirm-box table { padding: 14px 12px 4px 10px; line-height: 1.6em; color: #333; }
+.gb-confirm-box table td { padding: 4px 6px; }
+.gb-confirm-box .gb-confirm-box-btn { text-align: right; padding: 4px 20px; }
+/**提示框**/
+.gb-tip-box { width: 300px; height: 140px; }
+.gb-tip-box p { text-align: center; padding: 30px 0; border-bottom: 1px solid #999; }
+.gb-tip-box .gb-tip-box-btn { border-top: 1px solid #fff; padding: 4px 15px 4px; text-align: right; }
+.gb-tip-box .gb-tip-box-btn .gb-tip-btn-next * { display: inline-block; vertical-align: top; height: 16px; line-height: 16px; }
+.gb-tip-box .gb-tip-box-btn .gb-tip-btn-next input { margin-right: 5px; }
+.gb-tip-box .gb-tip-box-btn .gb-tip-btn-next { margin-top: 5px; display: inline-block; }
+.gb-tip-box .gb-tip-box-btn .gb-tip-btn-next:hover { color: #000; }
+.gb-tip-box .gb-tip-box-btn a { margin-right: 10px; margin-top: 10px; }
+
+/**多账号列表**/
+.gb-accountslist-box { width: 100%; height: 100%; overflow: hidden;}
+.gb-accountslist-box .gb-accountslist-box-in { width: 100%; padding: 10px 0; overflow: hidden; }
+.gb-accountslist-list-box { width: 105%; overflow: hidden; padding-top: 10px; }
+.gb-accountslist-list,.gb-accountslist-listno { background: #fff; position: relative; width: 182px; height: 96px; padding:8px 10px 10px; margin: 0 12px 20px 12px; float: left; _display: inline; }
+.gb-accountslist-list-c { cursor: pointer;}
+.gb-accountslist-mainUser .gb-accountslist-list-c { cursor: default;}
+.gb-accountslist-list-t { height: 20px; font-size: 0}
+.gb-accountslist-list-t span { display: inline-block; vertical-align: top; padding-right: 5px; font-size: 12px;}
+.gb-accountslist-check { height: 16px; line-height: 16px; margin-top: 2px;}
+.gb-accountslist-edit { height: 16px; width: 16px; padding:0; margin-top: 2px; margin-left: 5px;}
+.gb-accountslist-name { max-width: 124px; height: 20px; padding-right: 0!important; }
+.gb-accountslist-name input { display: inline-block; vertical-align: top; height: 16px; line-height: 16px; padding: 1px 5px; *padding: 0px 5px 2px; border: 1px solid #ccc; width: 88px; font-size: 11px;}
+.gb-accountslist-name em { display: inline-block; vertical-align: top; height: 20px; line-height: 20px; }
+.gb-accountslist-list-t span .gb-disabled { background-position:2px -18px;}
+.gb-accountslist-delete { position: absolute; width: 16px; height: 16px; top: 8px; right: 8px;}
+.gb-accountslist-delete a { width: 16px; height: 16px; vertical-align: top; display: inline-block; background-position: 4px -46px;}
+.gb-accountslist-delete a:hover {background-position: 4px -96px; }
+.gb-accountslist-list ul { padding: 0 0 0 5px; margin-top: 10px;}
+.gb-accountslist-list li { color: #999; padding-bottom: 6px; height: 16px; line-height: 16px; overflow: hidden;}
+.gb-accountslist-listno {}
+.gb-accountslist-listno a { width: 100%; height: 100%; display: inline-block; background: url('../images/gb-accountslist-listno.png') no-repeat center; }
+.gb-accountslist-list-btn { text-align: center; padding-top: 20px; height: 34px; }
+.gb-accountslist-list-btn a:hover{ text-decoration: none; }
+.gb-accountslist-list-confirm { display: inline-block; vertical-align: top; height: 16px; line-height: 16px; padding: 8px 15px 8px 0; }
+.gb-accountslist-list-confirm * { display: inline-block; vertical-align: top; height: 16px; line-height: 16px; }
+.gb-accountslist-list-confirm em.gb-glay{ color: #666666; cursor: default;}
+.gb-accountslist-list-confirm input { margin-right: 5px; }
+.gb-accountslist-list-confirm:hover { color: #000;}
+.gb-accountslist-list-confirm i { margin-top: 6px; }
+
+
+
+
+/**弹出登录框**/
+.gb-dialog-login-box { width: 100%; height: 100%; }
+.gb-dialog-login-box .gb-dialog-login-t { border-bottom: 1px solid #999; overflow: hidden; }
+.gb-dialog-login-box .gb-dialog-login-t .gb-dialog-login-t-in { font-size: 0px; width: 100%; overflow: hidden;}
+.gb-dialog-login-box .gb-dialog-login-t a {vertical-align: top; display: inline-block; border-left: 1px solid #c5c5c5;float: left;width: 115px; text-align: center; padding: 5px; margin-left: -1px;}
+.gb-dialog-login-box .gb-dialog-login-t a.cur,.gb-dialog-login-box .gb-dialog-login-t a:hover { background: #fff; color: #000; text-decoration: none; }
+.gb-dialog-login-box .gb-dialog-login-t a span { font-size: 12px; padding-left: 6px; }
+.gb-dialog-login-box .gb-dialog-login-t a i { margin-top: 2px; }
+.gb-dialog-login-box .gb-dialog-login-t-c { margin: 0 auto;width: 340px;}
+.gb-dialog-login-box .gb-dialog-login-t-c ul { padding-top: 20px; }
+.gb-dialog-login-box .gb-dialog-login-t-c li { padding-top: 10px; }
+.gb-dialog-login-box .gb-dialog-login-t-c li * { display: inline-block; vertical-align: top;}
+.gb-dialog-login-box .gb-dialog-login-t-c li em.oas-login-box-em { width:80px; text-align: right; height: 30px; line-height: 30px; padding-right: 5px;}
+.gb-dialog-login-box .gb-dialog-login-t-c input {outline: none; color:#333; padding: 0.4em 0.5em 0.6em; width: 220px; border-radius: 4px; border: 1px solid #ddd; }
+.gb-dialog-login-box .gb-dialog-login-t-c a.gb-btn-green span { padding: 0.4em 3.5em 0.5em; }
+.gb-dialog-login-box a:hover { color: #000; text-decoration: none; }
+.gb-dialog-login-t-a { font-size: 0; height: 16px; line-height: 16px; margin: 4px 0;}
+.gb-dialog-login-t-a * { display: inline-block; vertical-align: top; height: 16px; font-size: 12px; line-height: 16px;}
+.gb-dialog-login-t-a a { color: #000; }
+.gb-dialog-login-t-a a:hover { color: #666; }
+.gb-dialog-login-t-a em { margin: 0 5px;}
+.gb-dialog-login-box .gb-dialog-login-t-tag{padding-left: 65px;}
+.gb-dialog-login-box .gb-dialog-login-t-tag input{width:auto;vertical-align: -5px;}
+.gb-dialog-login-box li.gb-dialog-login-t-tag em.oas-login-box-em{vertical-align: middle;padding:0 10px;width:auto;}
+
+
+/**游戏盒子**/
+.gb-game-box { width: 100%; height: 100%; }
+.gb-game-box-l { float: left; width: 230px; min-height: 100%; background: #f1f1f1; overflow-x: hidden; overflow-y: auto; border-right: 3px solid #c8c9c9;}
+.gb-game-box-l a:hover { color: #000; text-decoration: none; }
+.gb-gamebox-userinfo { padding: 10px;overflow: hidden;}
+
+.gb-gamebox-userinfo em {display: inline-block;float: left; width: 46px; height: 46px; background: url('../images/gb-define-user.png');}
+.gb-gamebox-userinfo .gb-gamebox-userinfo-name {display: inline-block;float: left; padding-left: 10px; width: 130px; height: 16px;overflow: hidden;cursor: default;}
+.gb-gamebox-userinfo .gb-gamebox-userinfo-btn{float: left;padding:10px 0 0 10px;width: 130px;}
+.gb-gamebox-userinfo .gb-gamebox-userinfo-btn a{color: #0063d3;margin-right: 10px;}
+.gb-gamebox-userinfo .gb-gamebox-userinfo-btn a:hover{color: #0063d3;text-decoration: underline;}
+.gb-gamebox-userinfo .gb-gamebox-userinfo-btn span{}
+
+.gb-gamebox-history { width: 100%;}
+.gb-gamebox-history-t {  border-top: 1px solid #c8c9c9; border-bottom: 1px solid #c8c9c9; width: 100%;}
+.gb-gamebox-history-t-wrap { font-size: 0; font-weight: bold; height: 16px; padding: 11px 10px; background: url('../images/oas-main-h-bg.png') repeat-x 0 0; border: 1px solid #fff; border-left:0;  border-right:0;}
+.gb-gamebox-history-t-wrap * { font-size: 14px; display: inline-block; vertical-align: top; height: 16px; line-height: 16px; color: #333; }
+.gb-gamebox-history-t-wrap i { *margin-top: -1px; margin-right: 5px;}
+.gb-gamebox-history-c { width: 100%;}
+.gb-gamebox-history-list .gb-gamebox-history-box{position: relative; border: 1px solid #f1f1f1; border-bottom: 1px solid #e2e3e4;  display: block; padding: 6px 10px;}
+.gb-gamebox-history-list .gb-gamebox-history-box:hover { border: 1px solid #43b61c; background: #fff; color: #000; text-decoration: none; }
+.gb-gamebox-history-list .gb-gamebox-history-box a{ display:block;}
+.gb-gamebox-history-list a img { height: 40px; width: 40px; float: left; }
+.gb-gamebox-history-list span { display: block; margin-left: 50px; height: 40px; overflow: hidden; }
+.gb-gamebox-history-list em {display: inline-block; width: 100%; vertical-align: top; padding-bottom: 3px;}
+.gb-gamebox-history-list .gb-gamebox-history-btn{position: absolute;top:15px;right:5px;width: 14px;height: 16px;display: inline-block;background: url('../images/gb-css.png') 0px -750px; display:none;}
+.gb-gamebox-history-list .gb-gamebox-history-btn:hover{background-position: 0px -800px;}
+.gb-gamebox-history-list .gb-gamebox-history-btn:active{background-position: 0px -850px;}
+.gb-gamebox-history-c .nodata {  text-align: center; padding: 15px 0; color: #999;}
+.gb-gamebox-history-fullname { color: #999;}
+
+.gb-left-recommengame { width: 100%; overflow: hidden;}
+.gb-left-recommengame-t {  border-top: 1px solid #c8c9c9; border-bottom: 1px solid #c8c9c9; width: 100%;}
+.gb-left-recommengame-t-wrap { font-size: 0; font-weight: bold; height: 16px; padding: 11px 10px; background: url('../images/oas-main-h-bg.png') repeat-x 0 0; border: 1px solid #fff; border-left:0;  border-right:0;}
+.gb-left-recommengame-t-wrap * { font-size: 14px; display: inline-block; vertical-align: top; height: 16px; line-height: 16px; color: #333; }
+.gb-left-recommengame-t-wrap i { *margin-top: -1px; margin-right: 5px;}
+.gb-left-recommengame-c { width: 100%;}
+.gb-left-recommengame-c .nodata { padding: 15px 0; text-align: center; color: #999; }
+
+
+.gb-left-recommengame-list { border: 1px solid #f1f1f1; border-bottom: 1px solid #e2e3e4; padding: 5px 10px 7px; cursor: pointer; }
+.gb-left-recommengame-small { width: 100%; overflow: hidden; height: 40px;}
+.gb-left-recommengame-l { width: 40px; height: 40px; float: left;}
+.gb-left-recommengame-l * { width:100%; height: 100%;}
+.gb-left-recommengame-r { margin-left: 48px; height: 40px; }
+.gb-left-recommengame-r h1 { font-size: 12px; font-weight:normal; height: 16px; line-height: 16px; margin: 3px 0; overflow: hidden;}
+.gb-left-recommengame-r p { color: #999; font-size: 12px; height: 16px; line-height: 16px; overflow: hidden;}
+.gb-left-recommengame-big { display: block; font-size: 0; border: 2px solid #43b61c; padding: 4px; background: #fff; overflow: hidden;}
+.gb-left-recommengame-big img,.gb-left-recommengame-big span { font-size: 0; display: block; }
+.gb-left-recommengame-big img { width: 100px; height: 60px; float: left;}
+.gb-left-recommengame-big span { overflow: hidden; margin-left: 105px; height: 60px; display: block;}
+.gb-left-recommengame-big em { display: inline-block; vertical-align: top; width: 100%;}
+.gb-left-recommengame-big em.gb-strong { font-weight: bold; padding-bottom: 10px; padding-left: 2px; }
+.gb-left-recommengame-big em.gb-button { padding: 2px; border: 1px solid #B9B9B9; width: auto; background: #dfdfdc; margin-left: 2px; border-radius: 3px; }
+.gb-left-recommengame-big em:hover.gb-button { color: #fff; border: 1px solid #359810; background: #45b51e;}
+
+
+
+/**主页面游戏列表**/
+.gb-game-box-r { margin-left: 230px; overflow-x: hidden; overflow-y: auto; position: relative; background: #fff; min-height: 100%; }
+.gb-game-main-body { background: #f1f1f1; width: 799px; }
+.gb-game-box-r-pic { text-align: center; overflow: hidden; overflow: hidden; height: 359px; }
+.gb-game-box-r-pic-box { width: 110%; padding: 10px 0 0 19px; overflow: hidden; height: 344px;}
+.gb-game-recommend-list { width: 370px; height: 340px; float: left; cursor: pointer; margin-right: 20px; overflow: hidden; position: relative;}
+.gb-game-recommend-list-img { width: 370px; height: 340px; }
+.gb-game-recommend-list-img img { width: 100%; height: 100%; border: 0}
+.gb-game-recommend-list-text { position: absolute; bottom: -100px; left: 0; width: 370px; height: 80px;padding:20px 0 0; background:url('../images/oas-gamelist-icon.png'); _filter: alpha(opacity=80);}
+.gb-game-recommend-list-desc {float: left;width: 225px; line-height: 20px; padding-left:20px;text-align: left; font-family:Tahoma; color: #333;}
+.gb-game-recommend-list-desc h1{font-size: 12px;padding-bottom: 4px;}
+.gb-game-recommend-list-desc p{line-height: 18px;}
+.gb-game-recommend-list-btn {float: right;padding:15px 10px 0 0; }
+.gb-game-recommend-list-btn a span em { font-size: 12px;}
+.gb-game-recommend-list-btn a:hover { text-decoration: none;}
+
+/**页游游戏列表**/
+.gb-game-list-box { width: 100%; background: #e4e4e4;}
+.gb-game-list-t {  overflow: hidden; height: 24px; padding: 6px 0; }
+.gb-game-list-name { float: left; height: 16px; padding: 4px 0 4px 10px; font-size: 0;}
+.gb-game-list-name * { display: inline-block; vertical-align: top; font-size: 12px; height: 16px; line-height: 16px;}
+.gb-game-list-name span { font-weight: bold; }
+.gb-game-list-name .gb-cup { margin:1px 5px 0 0;}
+.gb-game-list-tab { float: left; padding-left: 20px; height: 24px; font-size: 0; }
+.gb-game-list-tab a {padding: 3px 9px 5px; *padding: 4px 9px; height: 16px; font-size: 12px; line-height: 16px; border-radius: 3px; display: inline-block; vertical-align: top; }
+.gb-game-list-tab a:hover { background: #43b61c; color: #fff; text-decoration: none; }
+.gb-game-list-tab a.cur { background: #43b61c; color: #fff; text-decoration: none; }
+.gb-game-list-c { padding:5px 10px 10px; overflow: hidden; margin-left: 5px;}
+.gb-game-list-c-wrap { width: 110%; min-height: 164px; }
+.gb-game-list-c-wrap .nodata { height: 164px; line-height: 164px; text-align: center; color: #999;}
+.gb-games-lists-box { padding: 5px; margin: 0 15px 10px 0; cursor: pointer; color: #333; width: 170px; height: 154px; font-size: 12px; background: #fff; float: left; }
+.gb-games-lists-cont { width: 170px; height: 130px; overflow: hidden; position: relative; *zoom:1;}
+.gb-games-lists-cont img { width: 100%; height: 100%;}
+.gb-games-lists-cont-mask { position: absolute; width: 170px; height: 131px; background:url('../images/oas-gamelist-icon.png'); _filter: alpha(opacity=80);}
+.gb-games-lists-cont-desc { line-height: 20px; padding:10px; text-align: center;}
+.gb-games-lists-cont-btn { text-align: center; }
+.gb-games-lists-cont-btn a span em { font-size: 12px;}
+.gb-games-lists-cont-btn a:hover { text-decoration: none;}
+.gb-game-list-c-name { line-height: 25px; height: 25px; overflow: hidden;}
+.gb-game-list-c-type { display: none;}
+
+/**小游戏列表**/
+.gb-mingame-list {}
+.gb-mingame-list-t {  overflow: hidden; height: 24px; padding: 6px 0; }
+.gb-mingame-list-name { float: left; height: 16px; padding: 4px 0 4px 10px; font-size: 0;}
+.gb-mingame-list-name * { display: inline-block; vertical-align: top; font-size: 12px; height: 16px; line-height: 16px;}
+.gb-mingame-list-name span { font-weight: bold; }
+.gb-mingame-list-name .gb-mingame { background-position: 0 -651px; margin-right: 5px; margin-top: 1px;}
+.gb-mingame-list-c { padding:5px 10px 10px; overflow: hidden; margin-left: 5px;}
+.gb-mingame-list-c-wrap { width: 110%; min-height: 164px; }
+.gb-mingame-list-c-wrap .nodata { height: 164px; line-height: 164px; text-align: center; color: #999;}
+.gb-mingame-list-box { padding: 5px; margin: 0 15px 10px 0; cursor: pointer; color: #333; width: 170px; height: 154px; font-size: 12px; background: #fff; float: left; }
+.gb-mingame-list-cont { width: 170px; height: 130px; overflow: hidden; position: relative; *zoom:1;}
+.gb-mingame-list-cont-mask { position: absolute; width: 170px; height: 131px; background:url('../images/oas-gamelist-icon.png'); _filter: alpha(opacity=80);}
+.gb-mingame-list-cont-desc { line-height: 20px; padding:10px; text-align: center;}
+.gb-mingame-list-cont-btn { text-align: center; }
+.gb-mingame-list-cont-btn a span em { font-size: 12px;}
+.gb-mingame-list-cont-btn a:hover { text-decoration: none;}
+.gb-mingame-list-c-name { line-height: 25px; height: 25px; overflow: hidden;}
+.gb-mingame-list-cont-img { width: 170px; height: 130px;}
+.gb-mingame-list-cont-img img { width: 100%; height: 100%;}
+.gb-mingame-list-c-type { display: none;}
+.gb-block-more { float:right; height: 16px; padding: 4px 10px 4px 4px; cursor: pointer;}
+.gb-block-more span,.gb-block-more i { display: inline-block; vertical-align: top; line-height: 16px; }
+.gb-block-more span{color: #0063d3;}.gb-block-more span:hover{color: #0063d3;text-decoration:underline;}
+.gb-block-more .gb-add { background-position: 2px -698px; margin-left: 5px;}
+
+
+/**活动推荐**/
+.gb-gameActive-box { background: #e4e4e4}
+.gb-gameActive-t {  overflow: hidden; height: 24px; padding: 6px 0; }
+.gb-gameActive-name { float: left; height: 16px; padding: 4px 0 4px 10px; font-size: 0;}
+.gb-gameActive-name * { display: inline-block; vertical-align: top; font-size: 12px; height: 16px; line-height: 16px;}
+.gb-gameActive-name span {  font-weight: bold; }
+.gb-gameActive-name i { width: 16px; background: url('../images/oas-hot.png') no-repeat 2px 0; margin-right: 5px;}
+.gb-gameActive-c { padding:5px 10px 10px; overflow: hidden;}
+.gb-gameActive-c-wrap { width: 110%; font-size: 0; margin-left: 5px;}
+.gb-gameActive-c-wrap a { padding: 5px; margin: 0 15px 10px 0; color: #333; display: inline-block; vertical-align: top; width: 170px; height: 130px; font-size: 12px; background: #fff; }
+.gb-gameActive-c-wrap a:hover { text-decoration: none;}
+.gb-gameActive-c-wrap a img { width: 170px; height: 130px;}
+.gb-gameActive-c-wrap .nodata { height: 164px; line-height: 164px; text-align: center; color: #999;}
+
+
+
+/**选择服务器区域**/
+.gb-serverlist-box { width: 100%; max-width: 800px; overflow-x: hidden; overflow-y: auto; }
+.gb-serverlist-wrap { padding: 20px; }
+.gb-serverlist-t { color: #333; font-weight: bold; height: 16px; line-height: 16px; padding: 10px 0;}
+.gb-serverlist-recommend { width: 100%; padding-bottom: 15px;}
+.gb-serverlist-recommend-btn {width: 100%; min-height: 46px; _height:46px;}
+.gb-serverlist-recommend-btn a { display: inline-block; vertical-align: top; color: #fff; padding: 0.4em 2em; border: 1px solid #7b9e6f; background: #359813; }
+.gb-serverlist-recommend-btn a:hover { text-decoration: none;} 
+.gb-serverlist-recommend-btn a * { display:block; vertical-align: top; text-align: center;}
+.gb-serverlist-recommend-btn span { width: 100%; height: 16px; display: block; font-weight: bold; font-size: 14px; }
+
+.gb-serverlist-lastServer { width: 100%; padding-bottom: 20px;}
+.gb-serverlist-lastServer-c {width: 100%; font-size: 0; min-height: 40px; _height:40px;}
+.gb-serverlist-lastServer-c a { color: #333; display: inline-block; font-size: 12px; vertical-align: top; width: 118px; height: 16px; padding: 6px 0; border: 1px solid #bbb; background: #efefef; margin: 0 10px 10px 0; text-align: center; overflow: hidden; }
+.gb-serverlist-lastServer-c a:hover { text-decoration: none;}
+.gb-serverlist-lastServer-c a span { display: inline-block; vertical-align: top; height: 16px; line-height: 16px; overflow: hidden; *margin-top: -1px;}
+
+.gb-serverlist-box-c {width: 100%; font-size: 0; min-height: 40px; _height:40px;clear: both;}
+.gb-serverlist-box-c a { color: #333; display: inline-block; font-size: 12px; vertical-align: top; width: 118px; height: 16px; padding: 6px 0; border: 1px solid #bbb; background: #efefef; margin: 0 10px 10px 0; text-align: center; overflow: hidden; }
+.gb-serverlist-box-c a:hover { text-decoration: none;}
+.gb-serverlist-box-c a span { display: inline-block; vertical-align: top; height: 16px; line-height: 16px; overflow: hidden; *margin-top: -1px;}
+
+.gb-serverlist-search { float: left; border: 1px solid #b6b7bc;padding: 0 5px; color: #999; margin-bottom: 20px; height: 30px; font-size: 0;}
+.gb-serverlist-search *{ display: inline-block;float: left; font-size: 12px; }
+.gb-serverlist-search input { width: 176px; color: #000; overflow: hidden; font-weight: bold; background: none; border: none;outline: none; line-height: 16px; box-sizing: border-box; padding:7px 0; }
+.gb-serverlist-search a {overflow: hidden;  margin-right: 0; cursor: pointer; display: inline-block; font-size: 12px; vertical-align: top; width: 18px; height: 27px; background: url('../images/gb-css.png') 4px -593px ; }
+.gb-serverlist-search span {display: inline-block; height: 16px; padding: 7px 5px 7px 0; line-height: 16px;}
+.gb-serverlist-box .nodata {  font-size: 12px; padding: 7px 0; color: #999; }
+
+.gb-serverlist-box-t .gb-serverlist-box-btn { color: #fff; padding: 10px 36px; border: 1px solid #7b9e6f; background: #359813; display: inline-block; border-radius: 6px; }
+.gb-serverlist-box-t .gb-serverlist-box-btn span, .gb-serverlist-box-t .gb-serverlist-box-btn em { display: block; }
+.gb-serverlist-box-t .gb-serverlist-box-btn span { font-weight: bold; font-size: 14px; }
+.gb-serverlist-box-t .gb-serverlist-box-btn:hover { text-decoration: none; }
+.gb-serverlist-box .gb-serverlist-box-search { margin: 10px 5px; border: 1px solid #b6b7bc; display: inline-block; width: 220px;_width: 240px;}
+.gb-serverlist-box .gb-serverlist-box-search input { width: 188px; color: #000; font-weight: bold; display: inline-block; font-size: 12px; vertical-align: top; background: none; border: none; outline: none; line-height: 14px; box-sizing: border-box; padding: 0.6em 0.5em 0.6em; }
+.gb-serverlist-box .gb-serverlist-box-search a {overflow: hidden;  margin-right: 0; cursor: default; display: inline-block; font-size: 12px; vertical-align: top; width: 18px; height: 27px; background: url('../images/gb-css.png') 0 -594px; padding-right: 1px; }
+.gb-serverlist-box-subt .gb-serverlist-box-subbtn span { background: #e5e5e5; color: #000; padding: 6px 20px; border: 1px solid #bbb; display: inline-block; margin-left: 6px; }
+.gb-serverlist-box-subt .gb-serverlist-box-subbtn a:hover span { text-decoration: none; border: 2px solid #43b61c; padding: 5px 19px; }
+.gb-serverlist-box-list { width: 100%; }
+.gb-serverlist-box-list a { width: 118px; height: 28px; border: 1px solid #bbb; background: #e5e5e5; margin: 5px; display: inline-block; text-align: center; line-height: 30px; }
+.gb-serverlist-box-list a:hover { color: #000; text-decoration: none; }
+
+
+
+/**登录器**/
+.gb-login-bg { background: url('../images/gb-login-box-bg.png') no-repeat 0 -1px;}
+.gb-login-box { width: 678px; height: 364px; margin:0; overflow: hidden; }
+.gb-login-box .gb-login-up { padding: 2px 18px; height: 176px; overflow: hidden; }
+.gb-login-box a:hover { text-decoration: none;}
+
+.gb-login-up-r .gb-login-up-r-t { color: #f90; font-weight: bold; font-size: 16px;  padding-bottom: 6px;}
+.gb-login-up-r { margin-left: 340px; margin-top: 8px;}
+.gb-login-up-r ul {}
+.gb-login-up-r ul li { width: 100%; overflow: hidden; height: 18px; padding: 3px 0;}
+.gb-login-up-r ul li a { font-weight: bold; color: #f00; height: 18px; line-height: 18px; display: inline-block; vertical-align: top; overflow: hidden; }
+.gb-login-up-r ul li em { font-size: 0px; height: 4px; width: 4px; background: #c7892c; display: inline-block; margin-left: 4px; }
+.gb-login-up-r ul li span { padding-left: 10px; }
+.gb-login-down { background: url('../images/gb-login-down-bg.png') no-repeat 0 0; margin: 14px 0 0 52px; }
+.gb-login-down-t a { display: inline-block; font-size: 0px; background: url('../images/oas-login-bg.png') no-repeat 0 0;width: 175px;height: 36px;text-align: center;line-height: 36px;}
+.gb-login-down-t a.gb-login-down-t-one{background-position: 0px 0px;}
+.gb-login-down-t a.gb-login-down-t-one:hover{background-position: 0px -40px;}
+.gb-login-down-t a.gb-login-down-t-one.cur{background-position: 0px -40px;}
+.gb-login-down-t a.gb-login-down-t-two{background-position: 0px -80px;width: 205px;}
+.gb-login-down-t a.gb-login-down-t-two:hover{background-position: 0px -120px;}
+.gb-login-down-t a.gb-login-down-t-two.cur{background-position: 0px -120px;}
+.gb-login-down-t a.gb-login-down-t-three{background-position: 0px -160px;}
+.gb-login-down-t a.gb-login-down-t-three:hover{background-position: 0px -200px;}
+.gb-login-down-t a.gb-login-down-t-three.cur{background-position: 0px -200px;}
+.gb-login-down-t a span { display: inline-block; font-size: 12px; color: #fff; padding: 0px 6px; }
+.gb-login-down-t a em { display: inline-block; font-size: 12px; color: #fff; padding-right: 6px; }
+.gb-login-down-t a:hover { color: #fff; }
+.gb-login-down-c { width: 100%; height: 110px; padding-top: 12px; padding-bottom: 20px; }
+
+.gb-login-down-c-l { float: left; display: inline-block; padding-left: 43px; width: 300px; }
+.gb-login-down-c-l table { width: 300px;}
+.gb-login-down-c-l table tr td{padding:2px 0px;}
+.gb-login-down-c-l .gb-login-down-td-t { font-weight: bold; color: #ceb271;text-align: right;padding:0 6px;}
+.gb-login-down-c-l .gb-login-downdown-cbx  { width: 203px;}
+.gb-login-down-c-l .gb-login-downdown-cbx p { width: 183px; padding: 0 10px; height: 28px; background: url('../images/oas-login-bg.png') no-repeat 0 -400px; }
+.gb-login-down-c-l .gb-login-down-txt, .gb-login-down-psd { font-weight: bold; background: none; color: #fff; outline: none; border: 0; height: 16px; line-height: 16px; padding: 6px 0; display: inline-block; width: 183px;}
+.gb-login-down-c-l .gb-login-down-cbx { font-weight: bold; color: #ceb271; padding-top: 15px; }
+.gb-login-down-c-l .gb-login-down-cbx input { float: left; margin: 4px 4px 0 0; *margin: -1px 2px 0 0;}
+.gb-login-down-c-l .gb-login-down-cbx label { float: left; }
+
+
+
+.gb-login-down-c-r { float: left;  padding-left: 16px; width: 200px; }
+.gb-login-down-c-r a:hover { text-decoration: none; }
+.gb-login-down-c-r a.gb-login-down-c-btn { font-size: 20px; color: #fedd00;display: inline-block;background: url('../images/oas-login-bg.png') no-repeat 0 -260px;width: 158px;height: 64px; line-height: 64px;text-align: center;}
+.gb-login-down-c-r a.gb-login-down-c-btn:hover {background-position: 0 -329px;}
+.gb-login-down-c-r .gb-loginBox-other { text-align: left; font-size: 0; height: 16px; padding: 15px 0 0;}
+.gb-login-down-c-r .gb-loginBox-other * { display: inline-block; vertical-align: top; font-size: 12px; height: 16px; line-height: 16px; color: #ceb271;}
+.gb-login-down-c-r .gb-loginBox-other a { font-weight: bold; }
+.gb-login-down-c-r .gb-loginBox-other em { margin: 0 5px;}
+
+
+
+/**轮播图**/
+.gb-login-up-l { float: left; width: 325px; height: 160px; overflow: hidden; padding: 8px 0 0 5px;}
+.oas-slider-box { position: relative;} 
+/*图片显示区域样式*/
+.oas-slider-box li a { width: 100%; height: :100%; display: block; vertical-align: top;}
+.oas-slider-box li a img { width: 100%; height: :100%; }
+/*icon小图片区域样式*/
+.oas-slider-box .oas-slider-ico { position: absolute; bottom: 10px; font-size: 0; text-align: right;}
+.oas-slider-box .oas-slider-ico span { cursor: pointer; background: #373737; font-size: 12px; display: inline-block; vertical-align: top; text-align: center; }
+.oas-slider-box .oas-slider-ico span.oas-slider-number { width: 18px; height: 18px; line-height: 18px; border:1px solid #585858; color: #ffe8bb; }
+.oas-slider-box .oas-slider-ico span.oas-slider-dot { cursor: pointer; width: 1em; height: 1em; background: #000; border-radius: 50%; }
+.oas-slider-box .oas-slider-ico span.active { cursor: default; background: #4f1f1f; color: #ffe8bb; font-weight: bold; border:1px solid #702c2c;}
+/*左右图标按钮样式*/
+.oas-slider-box a.oas-slider-btn { opacity: 0.4; filter: alpha(opacity=40); position: absolute; top:50%; margin-top: -11px; display: inline-block; vertical-align: top; width: 24px; height: 22px; background-image:url('../images/gsy-slider-btn.gif'); background-position: -9999px -9999px; background-repeat: no-repeat; }
+.oas-slider-box a.oas-slider-btn:hover { opacity: 0.8; filter: alpha(opacity=80);}
+.oas-slider-box a.next { right: 20px; background-position: -37px 0;}
+.oas-slider-box a.prev { left: 20px; background-position:0 0;}
+
+/**小游戏弹出登录框**/
+.gb-oyun-dialog-login-box { width: 100%; height: 100%; background: #e9e9e9;}
+.gb-oyun-dialog-login-box .gb-oyun {overflow: hidden;padding-top: 60px; background: url('../images/gb-oyun-in-bg.png') no-repeat top center;}
+.gb-oyun-dialog-login-box .gb-oyun .gb-oyun-in { font-size: 0px; width: 100%; overflow: hidden;text-align: center;}
+.gb-oyun-dialog-login-box .gb-oyun a {background: url('../images/gb-oyun-dialog-login-t-bg.png') no-repeat; vertical-align: top; display: inline-block; text-align: center;width:130px;padding: 4px 0px;font-weight: bold; color: #d9d9d9;}
+.gb-oyun-dialog-login-box .gb-oyun a.cur { color: #000; text-decoration: none;background: url('../images/gb-oyun-dialog-login-t-curbg.png') no-repeat; }
+.gb-oyun-dialog-login-box .gb-oyun a:hover { color: #000; text-decoration: none;background: url('../images/gb-oyun-dialog-login-t-curbg.png') no-repeat; }
+.gb-oyun-dialog-login-box .gb-oyun a span { font-size: 14px; padding-left: 6px; }
+.gb-oyun-dialog-login-box .gb-oyun a i { margin-top: 2px; }
+.gb-oyun-dialog-login-box .gb-oyun-c { width: 340px; margin: 0 auto;}
+.gb-oyun-dialog-login-box .gb-oyun-c ul { padding-top: 20px; }
+.gb-oyun-dialog-login-box .gb-oyun-c li { padding-top: 10px; }
+.gb-oyun-dialog-login-box .gb-oyun-c li * { display: inline-block; vertical-align: top;}
+.gb-oyun-dialog-login-box .gb-oyun-c li em.oas-login-box-em { width:60px; text-align: right; height: 30px; line-height: 30px; padding-right: 5px;}
+.gb-oyun-dialog-login-box .gb-oyun-c input.gb-oyun-input {outline: none; color:#333; padding: 0.4em 0.5em 0.6em; width: 330px; border-radius: 4px; border: 1px solid #bbb; }
+.gb-oyun-dialog-login-box .gb-oyun-c input.gb-oyun-input2{margin-top: 3px;}
+.gb-oyun-dialog-login-box .gb-oyun-c input.gb-oyun-marginleft{margin-left: 50px;}
+.gb-oyun-dialog-login-box .gb-oyun-c a.gb-btn-green span { padding: 0.4em 2.5em 0.5em; }
+.gb-oyun-dialog-login-box .gb-oyun-c b{font-weight: none; font-size: 12px;color: #333;}
+.gb-oyun-dialog-login-box .gb-oyun-c li .gb-oyun-signup{border-right: 1px solid #bbb;padding-left: 10px;}
+.gb-oyun-dialog-login-box .gb-oyun-c li .gb-oyun-signup,.gb-oyun-dialog-login-box .gb-oyun-c li .gb-oyun-forgot{margin: 6px 0px;padding-right: 6px;}
+.gb-oyun-dialog-login-box .gb-oyun-c li .gb-oyun-signup:hover,.gb-oyun-dialog-login-box .gb-oyun-c li .gb-oyun-forgot:hover{color: #000;text-decoration: none;}

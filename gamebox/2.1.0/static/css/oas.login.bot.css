@@ -1,0 +1,97 @@
+/**登录器**/
+html { height: 100%; }
+body { font: normal 12px/1.5 Tahoma, Arial; overflow-x: hidden; height: 100%; margin: 0; color: #949bae; }
+p,li,ul,ol,h1,h2,h3,h4,h5,h6,dl,dd,dt,img,a,div,td { margin: 0; padding: 0; list-style: none; word-wrap: break-word; word-break: normal; border: 0; }
+input,textarea,select { font-family: Tahoma; font-size: 12px; margin: 0; padding: 0; }
+* { margin: 0; padding: 0; }
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+.lopl-login-bg { background: url('../images/gb-bg.png') no-repeat; }
+.lopl-login-box { overflow: hidden; width: 609px; height: 364px; margin: 0; }
+.lopl-login-box .lopl-login-up { overflow: hidden; height: 160px; padding: 8px 14px 7px 10px; }
+.lopl-login-box a:hover { text-decoration: none; }
+/**轮播图**/
+.gb-login-up-l { float: left; overflow: hidden; width: 330px; height: 160px; }
+.oas-slider-box { position: relative; }
+/*图片显示区域样式*/
+.oas-slider-box li a { display: block; width: 100%; height: : 100%; vertical-align: top; }
+.oas-slider-box li a img { width: 100%; height: : 100%; }
+/*icon小图片区域样式*/
+.oas-slider-box .oas-slider-ico { font-size: 0; position: absolute; bottom: 10px; text-align: right; }
+.oas-slider-box .oas-slider-ico span { font-size: 12px; display: inline-block; cursor: pointer; text-align: center; vertical-align: top; background: #373737; }
+.oas-slider-box .oas-slider-ico span.oas-slider-number { line-height: 18px; width: 18px; height: 18px; color: #ffe8bb; border: 1px solid #585858; }
+.oas-slider-box .oas-slider-ico span.oas-slider-dot { width: 1em; height: 1em; cursor: pointer; border-radius: 50%; background: #000; }
+.oas-slider-box .oas-slider-ico span.active { font-weight: bold; cursor: default; color: #ffe8bb; border: 1px solid #702c2c; background: #4f1f1f; }
+/*左右图标按钮样式*/
+.oas-slider-box a.oas-slider-btn { position: absolute; top: 50%; display: inline-block; width: 24px; height: 22px; margin-top: -11px; vertical-align: top; opacity: .4; background-image: url('../images/gsy-slider-btn.gif'); background-repeat: no-repeat; background-position: -9999px -9999px; filter: alpha(opacity=40); }
+.oas-slider-box a.oas-slider-btn:hover { opacity: .8; filter: alpha(opacity=80); }
+.oas-slider-box a.next { right: 20px; background-position: -37px 0; }
+.oas-slider-box a.prev { left: 20px; background-position: 0 0; }
+.lopl-login-up-r .lopl-login-up-r-t { font-size: 14px; color: #feeaab; }
+.lopl-login-up-r { float: right; width: 240px; margin-top: 6px; }
+.lopl-login-up-r ul li { overflow: hidden; width: 100%; height: 24px; }
+.lopl-login-up-r ul li a { line-height: 20px; display: inline-block; overflow: hidden; height: 24px; text-decoration: none; color: #b28e76; }
+.lopl-login-up-r ul li em { font-size: 0; display: inline-block; float: left; width: 4px; height: 4px; margin-top: 8px; margin-bottom: 3px; margin-left: 4px; background: #e12001; *margin-bottom: 4px; }
+.lopl-login-up-r ul li span { padding-left: 6px; cursor: pointer; }
+.lopl-login-up-r ul li a:hover { text-decoration: none; color: #e12001; }
+.lopl-login-down { margin: 16px 0 0 25px; }
+.lopl-login-left { float: left; width: 207px; height: 146px; }
+.lopl-login-left h4 { font-size: 14px; font-weight: 100; line-height: 33px; height: 35px; color: #feeaab; }
+.lopl-login-left .lopl-btn a { display: inline-block; width: 159px; height: 40px; background: url('../images/lopl-login-bg.png') no-repeat 0 0; }
+.lopl-login-left .lopl-btn a:hover { background-position: 0 -45px; }
+.lopl-login-left .lopl-btn a.lopl-btn-google { margin-top: 16px; background-position: 0 -90px; }
+.lopl-login-left .lopl-btn a.lopl-btn-google:hover { background-position: 0 -135px; }
+.lopl-login-left .lopl-btn a span { line-height: 40px; display: inline-block; float: right; width: 118px; cursor: pointer; text-align: center; color: #fff; }
+.lopl-login-box-wrap { width:377px; height: 160px;float: left; }
+.lopl-login-center { float: left; width: 200px; height: 160px; padding-top: 5px; }
+.lopl-login-center h4 { height: 30px; }
+.lopl-login-center h4 em { display: inline-block; float: left; width: 23px; height: 23px; background: url('../images/lopl-login-bg.png') 0 -379px; }
+.lopl-login-center h4 span { font-size: 14px; font-weight: 100; line-height: 23px; float: left; padding-left: 10px; color: #feeaab; }
+.lopl-login-center .lopl-login-wrap-up { width: 100%; position: relative; z-index: 2;}
+.lopl-login-center .lopl-login-wrap-up li { /* width: 100%;  */}
+.lopl-login-center .lopl-login-wrap-up input,.lopl-login-center .lopl-login-wrap-up label { line-height: 23px; display: block; width: 192px; height: 23px; padding: 0 0 0 6px; color: #d3cac1; border: 1px solid #36cafd; outline: none; background: #054282; }
+.lopl-login-center .lopl-login-wrap-up p { font-size: 10px; line-height: 20px; height: 20px; transform: scale(0.9); text-align: right; color: #e12001; margin-left: -10px;width: 220px;}
+.lopl-login-center .lopl-login-wrap-up .gb-login-arrow-down{ background: url('../images/gb-css.png') 0px -1031px; height: 23px; width: 25px; display:block; position: absolute; right: 0px; top: 1px;}
+.lopl-login-center .lopl-login-wrap-up .gb-login-arrow-up{ background-position: right -1031px; right: 0px;}
+.lopl-login-center .lopl-login-wrap-down { position: relative; width: 100%; padding-top: 6px; }
+.lopl-login-center .lopl-login-wrap-down ul li { font-size: 0; width: 100%; height: 18px; }
+.lopl-login-center .lopl-login-wrap-down ul li input { font-size: 0; display: inline-block; float: left; margin-top: 3px; outline: none; *margin-top: 0; }
+.lopl-login-center .lopl-login-wrap-down ul li label { float: left; }
+.lopl-login-center .lopl-login-wrap-down ul li span { font-size: 12px; padding-left: 4px; color: #d0ccc3; }
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list{ position: absolute;left: 0px;top: 25px;z-index: 9999999;width: 198px;border: 1px solid #36CAFD; background: #054282; display: none;}
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list ul{max-height: 92px; overflow-x:hidden; overflow-y:auto; }
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list li{ color: #d3cac1; height: 23px; line-height: 23px;padding: 0 5px; }
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list li:hover{ color: #feead5; cursor: default; background: #402305;}
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list li i{background: url('../images/gb-css.png') 0px -1007px; width: 12px; height: 16px; float: right; display: none;}
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list li i:hover{ background-position: right -1007px; }
+.lopl-login-wrap-down .lopl-login-forget { position: absolute; top: 6px; right: 0; color: #d0ccc3; }
+.lopl-login-wrap-down .lopl-login-forget a { color: #d0ccc3; }
+.lopl-login-right { float: left; width: 133px; height: 120px; padding-top: 34px; padding-left: 20px; }
+.lopl-login-right a { display: inline-block; width: 137px; height: 42px; background: url('../images/gb-login-btn.png') no-repeat 0 0; }
+.lopl-login-right a:hover { background-position: -137px 0; }
+.lopl-login-right a.lopl-btn-register { margin-top: 10px; background-position: 0 -42px; }
+.lopl-login-right a.lopl-btn-register:hover { background-position: -137px -42px; }
+.lopl-login-right a span { font-size: 18px; line-height: 40px; display: block; text-align: center; color: #fff; text-shadow: 2px 2px 1px #000; }
+.lopl-login-right p.login-status-res{ color:#e12001;}
+/*账号注册*/
+.lopl-register-box-wrap{ width: 370px; height:160px; float: left;}
+.lopl-register-center{ width:200px;height: 160px;float: left;padding-top: 5px;}
+.lopl-register-center h4{height: 30px;}
+.lopl-register-center h4 em{width: 24px;float: left; height: 23px;background: url('../images/lopl-login-bg.png') 0px -379px;display: inline-block;}
+.lopl-register-center h4 span{color: #feeaab;line-height:23px;padding-left: 10px;float: left;font-size: 14px;font-weight: 100; }
+.lopl-register-center .lopl-register-wrap-up {width: 100%; position: relative; z-index: 2;}
+.lopl-register-center .lopl-register-wrap-up li{width: 100%;}
+.lopl-register-center .lopl-register-wrap-up li .gb-register-div{ width: 192px;padding:0 0 0 6px; height: 23px;line-height: 23px; border: 1px solid #36CAFD;background: #054282;}
+.lopl-register-center .lopl-register-wrap-up input,.lopl-register-center .lopl-register-wrap-up label{outline: none; border: none; color: #d3cac1;display: block; height: 23px;line-height: 23px; background: #054282;float: left;width: 182px;}
+.lopl-register-center .lopl-register-wrap-up input{ color: #d3cac1;}
+.lopl-register-center .lopl-register-wrap-up p{text-align: right;color: #e12001;font-size: 10px;transform:scale(0.9);height: 20px;line-height: 20px;margin-left: -10px;width: 220px;}
+.lopl-register-right{ width:133px;height: 120px;padding-top:50px;float: left;padding-left: 20px;}
+.lopl-register-right a{display: inline-block;width:137px;height: 42px;background: url('../images/gb-login-btn.png') no-repeat 0px -42px;  }
+.lopl-register-right a:hover{ background-position: -137px -42px;}
+.lopl-register-right a.lopl-btn-register{background: url('../images/lopl-register-bg.png') no-repeat 0px -116px; height: 42px; }
+.lopl-register-right a span{font-size: 12px; color: #feeaab;line-height: 40px;text-align:center;display: block;text-shadow:2px 2px 1px #000;}
+.lopl-register-right a#gb-btn-to-login span{text-align:left;text-indent: 29px; font-size: 14px;white-space: nowrap;}
+.lopl-register-right a.lopl-btn-register span{ line-height: 40px;}
+.lopl-register-right .gb-register-btn a span{font-size: 18px; color: #ffffff;}
+.lopl-register-right p{color: #e12001;}
+.gb-to-register-btn{cursor: pointer;}

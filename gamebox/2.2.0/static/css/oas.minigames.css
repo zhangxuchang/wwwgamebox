@@ -1,0 +1,22 @@
+html,body{background: #121212;overflow: hidden;}
+.lz-main{height: 100%;padding: 0;}
+.lz-menu-wrap{background: #4b4b4b;   border: 1px solid #6b6b6b; }
+.lz-menu-icon{ background: url('../images/gb-minigame-ico.png') 0 0 no-repeat;}
+.lz-search-list,.lz-history-list{ padding: 0px; border-top: 1px solid #3b3b3b;}
+.lz-search-list a,.lz-history-list a{ border: none; background-color: #4b4b4b; color: #b2b2b2;}
+.lz-search-list a:hover,.lz-history-list a:hover{ border: none; background-color: #3b3b3b; color: #ffffff;}
+.lz-main-wrap{padding: 10px 0;}
+
+.cxg-scroll-box { position: relative; overflow: hidden;}
+.cxg-scroll-r { position: absolute; right: 0; top: 0;}
+.cxg-scroll-top,.cxg-scroll-bottom {background:#414141;border:1px solid #414141;border-bottom-color:#000;}.cxg-scroll-bottom {border-color:#414141;border-top-color:#000;}
+.cxg-scroll-top span,.cxg-scroll-bottom span { display: inline-block; vertical-align: top; width: 100%; height: 100%; cursor: pointer;}
+.cxg-scroll-top span { background: url(../images/scrolltop.gif) no-repeat center;}
+.cxg-scroll-bottom span { background: url(../images/scrollbottom.gif) no-repeat center;}
+.cxg-scroll-middle{background: #585858;}
+.cxg-scroll-middle-c { margin: 0 auto; position: absolute; top:0; cursor: pointer; background: url(../images/scrollbg.png) no-repeat -14px bottom; }
+.cxg-scroll-middle-cont{background: url(../images/scrollbg.png) no-repeat 0 0;height:10px;width: 100%;}
+.cxg-scroll-noSelect { -ms-user-select:none; -webkit-user-select:none; -moz-user-select:none;}
+
+.lz-menu-box{right: 24px;}
+.lz-history-menu-box .lz-nodata{color: #b2b2bb;}

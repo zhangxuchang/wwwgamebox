@@ -1,0 +1,119 @@
+/**登录器**/
+html { height: 100%; }
+body { height: 100%; margin: 0; font: normal 12px/1.5 Tahoma, Arial; color: #949bae; overflow-x: hidden; }
+p, li, ul, ol, h1, h2, h3, h4, h5, h6, dl, dd, dt, img, a, div, td { margin: 0px; padding: 0px; border: 0px; word-wrap: break-word; word-break: normal; list-style: none; }
+input, textarea, select { margin: 0px; padding: 0px; font-size: 12px; font-family: Tahoma }
+* { padding: 0; margin: 0; }
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+.lopl-login-bg { background: url('../images/login-naruto-bg.jpg') no-repeat;}
+.lopl-login-box { width: 609px; height: 364px; margin:0; overflow: hidden; }
+.lopl-login-box .lopl-login-up { padding: 8px 14px 7px 10px; height: 160px; overflow: hidden; }
+.lopl-login-box a:hover { text-decoration: none;}
+.clear { clear: both; height: 0px; overflow: hidden;}
+
+
+/**轮播图**/
+.gb-login-up-l { float: left; width: 330px; height: 160px; overflow: hidden; border: 1px solid #0c94c8; margin-top: -3px;}
+.oas-slider-box { position: relative;} 
+/*图片显示区域样式*/
+.oas-slider-box li a { width: 100%; height:100%; display: block; vertical-align: top;}
+.oas-slider-box li a img { width: 100%; height:100%; }
+/*icon小图片区域样式*/
+.oas-slider-box .oas-slider-ico { position: absolute; bottom: 10px; font-size: 0; text-align: right;}
+.oas-slider-box .oas-slider-ico span { cursor: pointer; background: #373737; font-size: 12px; display: inline-block; vertical-align: top; text-align: center; }
+.oas-slider-box .oas-slider-ico span.oas-slider-number { width: 18px; height: 18px; line-height: 18px; border:1px solid #585858; color: #ffe8bb; }
+.oas-slider-box .oas-slider-ico span.oas-slider-dot { cursor: pointer; width: 1em; height: 1em; background: #000; border-radius: 50%; }
+.oas-slider-box .oas-slider-ico span.active { cursor: default; background: #4f1f1f; color: #ffe8bb; font-weight: bold; border:1px solid #702c2c;}
+/*左右图标按钮样式*/
+.oas-slider-box a.oas-slider-btn { opacity: 0.4; filter: alpha(opacity=40); position: absolute; top:50%; margin-top: -11px; display: inline-block; vertical-align: top; width: 24px; height: 22px;  }
+.oas-slider-box a.oas-slider-btn:hover { opacity: 0.8; filter: alpha(opacity=80);}
+.oas-slider-box a.next { right: 20px; background-position: -37px 0;}
+.oas-slider-box a.prev { left: 20px; background-position:0 0;}
+
+
+
+.lopl-login-up-r .lopl-login-up-r-t { color: #eabb14;  font-size: 14px;}
+.lopl-login-up-r {margin-top: 6px;float: right;width: 240px;}
+.lopl-login-up-r ul {}
+.lopl-login-up-r ul li { width: 100%; overflow: hidden; height: 24px;}
+.lopl-login-up-r ul li a {  color: #d4dbf2; height: 24px;text-decoration: none; line-height:20px; display: inline-block;  overflow: hidden; }
+.lopl-login-up-r ul li em {margin-top: 8px;float:left; margin-bottom: 3px;*margin-bottom: 4px; font-size: 0px; height: 4px; width: 4px; background: #eb9000; display: inline-block; margin-left: 4px; }
+.lopl-login-up-r ul li span { cursor: pointer;padding-left: 6px;}
+.lopl-login-up-r ul li a:hover{text-decoration: none;color: #ff8034;}
+.lopl-login-down {  margin: 16px 0 0 25px; }
+.lopl-login-left{ width:207px;height: 146px;float: left;}
+.lopl-login-left h4{color: #eabb14;font-size: 14px;line-height: 33px;font-weight: 100;height: 35px;}
+.lopl-login-left .lopl-btn a{display: inline-block;width:159px;height: 40px;background: url('../images/lopl-login-bg.png') no-repeat 0 0px;  }
+.lopl-login-left .lopl-btn a:hover{background-position: 0px -45px;}
+.lopl-login-left .lopl-btn a.lopl-btn-google{margin-top: 16px;background-position: 0px -90px; }
+.lopl-login-left .lopl-btn a.lopl-btn-google:hover{background-position: 0px -135px; }
+.lopl-login-left .lopl-btn a span{color: #fff;display: inline-block;line-height: 40px;cursor: pointer; width:118px;float: right;text-align: center; }
+.lopl-login-box-wrap{ width: 370px; height:160px; float: left;}
+.lopl-login-center{ width:200px;height: 160px;float: left;padding-top: 5px;}
+.lopl-login-center h4{height: 30px;}
+.lopl-login-center h4 em{width: 23px;float: left; height: 23px;background: url('../images/lopl-login-bg.png') 0px -379px;display: inline-block;}
+.lopl-login-center h4 span{color: #eabb14;line-height:23px;padding-left: 10px;float: left;font-size: 14px;font-weight: 100; }
+.lopl-login-center .lopl-login-wrap-up {width: 100%; position: relative; z-index: 2;}
+.lopl-login-center .lopl-login-wrap-up li .gb-login-div{ width: 192px;padding:0 0 0 6px; height: 23px;line-height: 23px; border: 1px solid #3b435a;background: #181d2a;}
+.lopl-login-center .lopl-login-wrap-up input,.lopl-login-center .lopl-login-wrap-up label{outline: none; border: none;float: left;width: 180px; color: #949bae;display: block; height: 23px;line-height: 23px; background: #181d2a;}
+.lopl-login-center .lopl-login-wrap-up input{ color: #d8e0f4;}
+.lopl-login-center .lopl-login-wrap-up p{text-align: right;color: #de3939;font-size: 10px;transform:scale(0.9);height: 20px;line-height: 20px;}
+/*账号下拉框*/
+.lopl-login-center .lopl-login-wrap-up .gb-login-down-txt,.lopl-login-center .lopl-login-wrap-up .gb-login-down-psd{ width: 168px;}
+.lopl-login-center .lopl-login-wrap-up .gb-login-arrow-down{ background: url('../images/naruto-gb-css.png') 0px -984px; height: 23px; width: 25px; display:block; position: absolute; right: 0px; top: 1px;}
+.lopl-login-center .lopl-login-wrap-up .gb-login-arrow-up{ background-position: right -984px; right: 0px;}
+
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list{ position: absolute;left: 0px;top: 25px;z-index: 9999999;width: 198px;border: 1px solid #374368; background: #181d2a; display: none;}
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list ul{max-height: 92px; overflow-x:hidden; overflow-y:auto; }
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list li{ height: 23px; line-height: 23px;padding: 0 5px; }
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list li:hover{ color: #d8e0f4; cursor: default; background: #212736;}
+
+/*.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list li span{ width: 146px; height: 20px; word-break:break-all; display:inline-block; word-wrap:break-word; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -moz-binding:url('ellipsis.xml#ellipsis'); overflow:hidden;
+}*/
+
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list li i{background: url('../images/gb-css.png') 0px -942px; width: 12px; height: 16px; float: right; display: none;}
+.lopl-login-center .lopl-login-wrap-up .lopl-login-wrap-list li i:hover{ background-position: right -942px; }
+/*end*/
+.lopl-login-center .lopl-login-wrap-down{position: relative;width: 100%;padding-top: 2px; z-index: 1;display: none;}
+.lopl-login-center .lopl-login-wrap-down ul { display: inline-block; width: 100%; position: relative;}
+.lopl-login-center .lopl-login-wrap-down ul li{height: 18px;width: 100%;font-size: 0px;float: left;}
+.lopl-login-center .lopl-login-wrap-down ul li input{outline: none; display: inline-block;float: left;font-size: 0; margin-top: 3px;*margin-top:-1px;*margin-left:-4p;width: 13px;height: 13px;}
+.lopl-login-center .lopl-login-wrap-down ul li label{float: left;}
+.lopl-login-center .lopl-login-wrap-down ul li span{color: #949bae;padding-left: 4px;font-size: 12px;}
+.lopl-login-wrap-down .lopl-login-forget{position: absolute;left: -17px;top: 20px;color: #949bae;}
+.lopl-login-wrap-down .lopl-login-forget a{color: #949bae;margin-left: 17px;}
+
+.lopl-login-center .lopl-login-wrap-downot{margin-top: -5px;}
+.lopl-login-wrap-downot .lopl-login-forget{right:auto;top: 26px;left:0;}
+
+.lopl-login-right{ width:133px;height: 120px;padding-top:34px;float: left;padding-left: 20px;}
+.lopl-login-right a{}
+.lopl-login-right a{display: inline-block;width:133px;height: 38px;background: url('../images/oas-naruto-btn.png') no-repeat 0 0;  }
+.lopl-login-right a:hover{ }
+.lopl-login-right a.lopl-btn-register{margin-top: 10px; background: url('../images/oas-naruto-btn.png') no-repeat 0 -50px;}
+.lopl-login-right a.lopl-btn-register:hover{ }
+.lopl-login-right a span{font-size: 16px; color: #fff;line-height: 36px ;text-align:center;display: block;text-shadow:2px 2px 1px #000;}
+.lopl-login-right p{color: #de3939;}
+/*账号注册*/
+.lopl-register-box-wrap{ width: 370px; height:160px; float: left;}
+.lopl-register-center{ width:200px;height: 160px;float: left;padding-top: 5px;}
+.lopl-register-center h4{height: 30px;}
+.lopl-register-center h4 em{width: 24px;float: left; height: 23px;background: url('../images/lopl-login-bg.png') 0px -379px;display: inline-block;}
+.lopl-register-center h4 span{color: #eabb14;line-height:23px;padding-left: 10px;float: left;font-size: 14px;font-weight: 100; }
+.lopl-register-center .lopl-register-wrap-up {width: 100%; position: relative; z-index: 2;}
+.lopl-register-center .lopl-register-wrap-up li{width: 100%;}
+.lopl-register-center .lopl-register-wrap-up li .gb-register-div{ width: 192px;padding:0 0 0 6px; height: 23px;line-height: 23px; border: 1px solid #3b435a;background: #181d2a;}
+.lopl-register-center .lopl-register-wrap-up input,.lopl-register-center .lopl-register-wrap-up label{outline: none; border: none; color: #949bae;display: block; height: 23px;line-height: 23px; background: #181d2a;float: left;width: 182px;}
+.lopl-register-center .lopl-register-wrap-up input{ color: #d8e0f4;}
+.lopl-register-center .lopl-register-wrap-up p{text-align: right;color: #de3939;font-size: 10px;transform:scale(0.9);height: 20px;line-height: 20px;}
+.lopl-register-right{ width:133px;height: 120px;padding-top:50px;float: left;padding-left: 20px;}
+.lopl-register-right a{display: inline-block;width:136px;height: 56px;background: url('../images/lopl-register-bg.png') no-repeat 0px 0px;  }
+.lopl-register-right a:hover{ background-position: 0 -56px;}
+.lopl-register-right a.lopl-btn-register{background-position: 0px -116px; height: 40px; }
+.lopl-register-right a span{font-size: 12px; color: #d4dbf2;line-height: 50px;text-align:center;display: block;text-shadow:2px 2px 1px #000;}
+.lopl-register-right a#gb-btn-to-login span{text-align:left;text-indent: 29px; font-size: 14px;white-space: nowrap;}
+.lopl-register-right a.lopl-btn-register span{ line-height: 40px;}
+.lopl-register-right .gb-register-btn a span{font-size: 18px; color: #ffffff;}
+.lopl-register-right p{color: #de3939;}
+.gb-to-register-btn{cursor: pointer;}

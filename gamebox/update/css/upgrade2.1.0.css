@@ -1,0 +1,52 @@
+
+body,html { background: #323232; }
+.dumascroll { border: 1px solid #5a5a5a; background: #434343; border-radius: 6px; margin: 0 15px; }
+#wrap { width: 100%; font-size: 12px; color: #c3c3c3; }
+
+.upgrade { width: 100%; }
+.upgrade h2 { font-weight: normal; font-size: 12px;padding:15px 15px 12px !important;clear: both; }
+.upgrade .update h2 { padding-top: 18px; padding-bottom: 9px; font-size: 0; color:#c3c3c3;}
+.upgrade .update h2 * { display: inline-block; vertical-align: top; font-size: 12px; font-weight: normal;}
+.upgrade .update h2 span { color: #c3c3c3;}
+.upgrade .update h2 em { padding: 0 5px;}
+.upgrade .content { height: 88px; padding:0 15px;}
+.upgrade .content p { line-height: 20px; word-wrap:break-word;/*word-break:break-all;*/}
+.upgrade .content .content_t { font-weight: bold; padding:4px 0!important; color:#c3c3c3;  }
+.upgrade .progress { padding-bottom: 30px; margin: 0 15px; }
+.upgrade .btn_button { background: url(../images/gamebox_upgrade_bg.jpg) repeat-x; height: 44px; line-height: 44px; position: fixed; bottom: 0px; width: 100%;}
+.upgrade .btn_button a { margin-top: 12px; height: 26px; line-height: 26px;  text-align: center; color: #818182; display: inline-block; text-align: center; float: right; margin-left: 14px; color: #fff;  }
+.upgrade .btn_button a.btn_other{  color: #fff;margin-right: 20px; }
+#cancel{background:url("../images/gb-update-bg.png") 0 -78px no-repeat;width: 90px; }
+#cancel:hover{background-position: 0 -104px;}
+#cancel:active{background-position: 0 -130px;}
+.upgrade .btn_button a#update{ width: 90px; background:url("../images/gb-update-bg.png") 0 0px no-repeat;0}
+.upgrade .btn_button a#update:hover{background-position: 0 -26px; }
+.upgrade .btn_button a#update:active{background-position: 0 -52px; }
+
+#skip{float: left; padding: 0px; }
+.upgrade .btn_button a.latest-btn{ background: url('../images/gamebox_latest_btn.png') ; color: #fff; margin-top: 8px;  width: 68px;  height: 28px;  line-height: 28px;}
+
+
+.upgrade .btn_button a.btn_skip{display: none;border:0;background: none;box-shadow: none;color: #0063d3;}
+.upgrade .btn_button a.btn_skip:hover,.upgrade .btn_button a.btn_skip:active{color: #0063d3;box-shadow: none;background: none;text-decoration: underline;}
+
+
+.latest{padding:66px 15px 46px 132px;height: 20px;overflow: hidden;background: url(../images/gamebox_latest_bg.png) no-repeat 15px 25px;}
+.latest p{ word-wrap: break-word;line-height: 20px;height: 20px;display: inline-block;color: #c3c3c3;}
+.about{position: relative;width: 388px;height: 230px;background: #323232;}
+.about_ico{position: absolute;top: 5px;left: 50%;margin-left: -40px;width: 79px;height: 79px; background: url('../images/photo-bg.png') 0 0 no-repeat;}
+.about_ico img{ margin: 6px; width: 68px; height: 68px;}
+.about_txt{position: absolute;left: 0;top: 80px;width: 388px;text-align: center;line-height: 20px;color: #cfcfcf;}
+.about_txt a{color: #1196c7;}.about_txt a:hover{color: #1196c7;text-decoration: underline;}
+
+.about_btn{position: absolute;left: 50%;top: 148px;margin-left: -61px;display: inline-block;width: 122px;height: 42px;text-align: center;line-height: 42px;font-size: 18px;background: url(../images/gamebox_about_btn-v2.png) no-repeat 0 0;color: #fff;font-family: Microsoft YaHei;/*text-shadow: 0 0 2px #000;*/}
+.about_btn:hover{background-position: 0 -42px;}
+.about_btn:active{background-position: 0 -84px;}
+
+.wrap_ar .upgrade,.wrap_ar .latest{direction: rtl;}
+.wrap_ar .progress{direction: ltr;}
+.wrap_ar .upgrade .btn_button a{float: left;}
+.update_percent{direction: ltr;padding-right: 5px;}
+
+.wrap_ar .latest{padding:66px 15px 46px 132px;}
+.wrap_ar #skip{float: right; padding-right: 15px; }

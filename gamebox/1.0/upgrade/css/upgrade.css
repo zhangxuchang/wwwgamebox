@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+body,html { background: #dcdddd; }
+.dumascroll { border: 1px solid #bbb; background: #ecece9; border-radius: 6px; margin: 0 15px; }
+#wrap { width: 100%; font-size: 12px; color: #252525; }
+.upgrade { width: 100%; }
+.upgrade h2 { font-weight: normal; padding-top: 15px; font-size: 12px; padding-bottom: 12px; margin: 0 15px; }
+.upgrade .update h2 { padding-top: 18px; padding-bottom: 9px; font-size: 0; }
+.upgrade .update h2 * { display: inline-block; vertical-align: top; font-size: 12px; font-weight: normal;}
+.upgrade .update h2 span { color: #333;}
+.upgrade .update h2 em { padding: 0 5px;}
+.upgrade .content { height: 89px; }
+.upgrade .content p { height: 16px; line-height: 20px; padding: 4px 10px; }
+.upgrade .content .content_t { font-weight: bold; }
+.upgrade .progress { padding-bottom: 30px; margin: 0 15px; }
+.upgrade .btn_button { margin-top: 27px; background: url(../images/gamebox_upgrade_bg.png) repeat-x; height: 35px; padding: 10px 20px 0px 0px; }
+.upgrade .btn_button a { height: 26px; line-height: 26px; width: 70px; color: #818182; display: inline-block; text-align: center; float: right; margin-left: 14px; background-color: #45b51e; color: #fff; box-shadow: inset 0px 1px 1px #39DA01; border: 1px solid #359810; border-radius: 3px; }
+.upgrade .btn_button a:hover { background: #53ce28; box-shadow: inset 0px 1px 1px #42EE06; }
+.upgrade .btn_button a:active { background: #329510; box-shadow: inset 0px 1px 4px #25630f; border: 1px solid #fff; }
+#cancel { border: 1px solid #b9b9b9; background-color: #f0f0f0; color: #000; box-shadow: inset 0px 1px 1px #ddd; }
+#cancel:hover { background-color: #fff; color: #000; }
+#cancel:active { background-color: #a3a3a3; color: #000; box-shadow: inset 2px 2px 2px #999; }

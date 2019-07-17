@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../static/css/oas.global.css?ver=2015111902" rel="stylesheet" type="text/css" />
+<script src="../static/package/jquery.min.js?ver=2015111902" type="text/javascript"></script>
+<script src="../static/package/oas.lang.js?ver=2015111902" type="text/javascript"></script>
+<script type="text/javascript">
+var pageType = "login";
+</script>
+</head>
+
+<body class="gb-login-bg" scroll="no">
+<div class="gb-login-box" >
+	<div class="gb-login-up">
+		<!--轮播图-->
+		<div class="gb-login-up-l">
+			<div class="oas-slider-box" id="gb-adsList-box"><ul></ul></div>	
+		</div>
+		<!--轮播图 结束-->
+		<!--新闻信息-->
+		<div class="gb-login-up-r" id="gb-newsList-box">
+			<div class="gb-login-up-r-t"><script type="text/javascript">OASWriteContent('Gamebox_actionAndNews')</script></div>
+			<ul class="gb-login-up-r-c"></ul>
+		</div>
+		<!--新闻信息 结束-->
+	</div>
+	<div class="gb-login-down" id="gb-login-down-inti">
+		<div class="gb-login-down-t">
+			<div class="gb-login-down-t-in">
+				<a href="Javascript: void(0)" class="gb-login-down-t-one cur"><i class="gb-i gb-oas"></i><span><script type="text/javascript">OASWriteContent('Gamebox_AccountOasgames');</script></span></a>
+				<a data-facebook="true" href="Javascript: void(0)" onclick="OAS_GAMES_JS.facebook.login({'fail':'Fail to connect with facebook'},GSY.gamebox.FBloginCallback);" class="gb-login-down-t-two"><i class="gb-i gb-facebook"></i><span><script type="text/javascript">OASWriteContent('Gamebox_AccountFacebook');</script></span></a>
+				<a data-google="true" href="Javascript: void(0)" onclick="OAS_GAMES_JS.google.login({'fail':'Fail to connect with google'},GSY.gamebox.GOOGLEloginCallback);" class="gb-login-down-t-three"><i class="gb-i gb-google"></i><span><script type="text/javascript">OASWriteContent('Gamebox_AccountGoogle');</script></span></a>
+			</div>
+		</div>
+		<div class="gb-login-down-c">
+			<!--list-->
+			<div class="gb-login-down-c-in" data-selecter="parent" data-type="oas" >
+				<div class="gb-login-down-c-l">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td class="gb-login-down-td-t"><script type="text/javascript">OASWriteContent('Gamebox_Account')</script></td>
+							<td class="gb-login-downdown-cbx">
+								<p><input type="text" data-name="username" class="gb-login-down-txt"/></p>
+							</td>
+						</tr>
+						<tr>
+							<td class="gb-login-down-td-t"><script type="text/javascript">OASWriteContent('Gamebox_Password')</script></td>
+							<td class="gb-login-downdown-cbx"><p><input data-name="password" type="password" class="gb-login-down-psd"/></p></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="gb-login-down-cbx"><input data-name="remember" type="checkbox" id="yes1"/><label for="yes1"><span><script type="text/javascript">OASWriteContent('Gamebox_remember_password');</script></span></label></td>
+						</tr>
+						<!-- <tr>
+							<td></td>
+							<td class="gb-login-down-cbx"><input data-name="automatic" type="checkbox" id="no1"/><label for="no1"><span><script type="text/javascript">OASWriteContent('Gamebox_Automatic_login');</script></span></label></td>
+						</tr> -->
+					</table>
+				</div>
+				<div class="gb-login-down-c-r">
+					<div class="gb-loginBox-btn"><a href="javascript:void(0);" onclick="GSY.gamebox.login($(this)); return false;" class="gb-login-down-c-btn"><script type="text/javascript">OASWriteContent('Gamebox_Login');</script></a></div>
+					<div class="gb-loginBox-other">
+						<script type="text/javascript">OASWriteContent('Gamebox_Register');</script>
+						<em>|</em>
+						<script type="text/javascript">OASWriteContent('Gamebox_Forgot_password');</script>
+					</div>
+				</div>				
+			</div>
+			<!--list end-->
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../static/package/oas.common.js?ver=2015111902"></script>
+<script type="text/javascript" src="../static/scripts/oas.gamebox.js?ver=2015111902"></script>
+<script type="text/javascript" src="../static/package/oas.library.js?ver=2018062801"></script>
+<script type="text/javascript" src="../static/package/oas.slider.js?ver=2015111902"></script>
+<script type="text/javascript" src="../static/scripts/oas.login.js?ver=2015111902"></script>
+<script type="text/javascript" src="//www.oasgames.com/gamebox/tempfacebook.js?ver=2015111902"></script>
+
+
+<script type="text/javascript">
+
+//配置当前游戏名称和游戏图标
+var GAME_CODE = GSY.util.getUrlParam('gameid');
+GSY.gamebox.setLocalGameData({
+	key : 'OAS_GAME_INFRO_' + GAME_CODE,
+	type : true,
+	value : LANG.gameConfig[GAME_CODE]
+});
+
+
+/**
+ * [description] 自动登陆设置
+ * @return {[type]} [description]
+ */
+;(function(){
+
+	var parent = $('#gb-login-down-inti');
+	var auto = parent.find('input[data-name=automatic]');
+	var remember = parent.find('input[data-name=remember]');
+
+	//设置自动登录
+	auto.click(function() {
+		//选中
+		if($(this).is(':checked')){
+			remember.attr('checked','checked');
+		}
+	});
+
+	//记住密码操作
+	remember.click(function(){
+		//未选中记住密码
+		if(!$(this).is(':checked')){
+			auto.removeAttr('checked');
+		}	
+	});
+})();
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.dumascroll { }        /*只需对需要渲染滚动条的div设置该class即可*/
+.dumascroll_area { height: 100%; overflow: hidden; }
+.dumascroll_bar { position: absolute; top: 0px; right: 5px; z-index: 9; width: 8px; height: 100%; cursor: default; -moz-user-select: none; -khtml-user-select: none; user-select: none; float: left; display: none; }
+.dumascroll_arrow_up, .dumascroll_arrow_up_a, .dumascroll_arrow_down, .dumascroll_arrow_down_a { background: url(../images/gamebox_scroll_arrow.png) no-repeat; width: 8px; height: 19px; display: inline-block; position: absolute; }
+.dumascroll_arrow_up, .dumascroll_arrow_up_a { top: 0; }
+.dumascroll_arrow_up_a { background-position: left -38px; }
+.dumascroll_arrow_up_a { background-position: left -38px; }
+.dumascroll_arrow_down, .dumascroll_arrow_down_a { background-position: left -19px; bottom: 0; }
+.dumascroll_arrow_down_a { background-position: left -57px; }
+.dumascroll_handle, .dumascroll_handle_a { position: absolute; width: 100%; background: #42404a; }
+.dumascroll_handle_a { background: #f1d43e; }

@@ -1,0 +1,38 @@
+
+body,html { background: #dcdddd; }
+.dumascroll { border: 1px solid #bbb; background: #ecece9; border-radius: 6px; margin: 0 15px; }
+#wrap { width: 100%; font-size: 12px; color: #252525; }
+.upgrade { width: 100%; }
+.upgrade h2 { font-weight: normal; font-size: 12px;padding:15px 15px 12px !important;clear: both; }
+.upgrade .update h2 { padding-top: 18px; padding-bottom: 9px; font-size: 0; }
+.upgrade .update h2 * { display: inline-block; vertical-align: top; font-size: 12px; font-weight: normal;}
+.upgrade .update h2 span { color: #333;}
+.upgrade .update h2 em { padding: 0 5px;}
+.upgrade .content { height: 88px; padding:0 15px;}
+.upgrade .content p { line-height: 20px; word-wrap:break-word;/*word-break:break-all;*/}
+.upgrade .content .content_t { font-weight: bold; padding:4px 0!important;  }
+.upgrade .progress { padding-bottom: 30px; margin: 0 15px; }
+.upgrade .btn_button { margin-top: 27px; background: url(../images/gamebox_upgrade_bg.png) repeat-x; height: 35px; padding: 10px 20px 0px 0px; }
+.upgrade .btn_button a { height: 26px; line-height: 26px; padding: 0 10px; color: #818182; display: inline-block; text-align: center; float: right; margin-left: 14px; background-color: #45b51e; color: #fff; box-shadow: inset 0px 1px 1px #39DA01; border: 1px solid #359810; border-radius: 3px; }
+.upgrade .btn_button a:hover { background: #53ce28; box-shadow: inset 0px 1px 1px #42EE06; }
+.upgrade .btn_button a:active { background: #329510; box-shadow: inset 0px 1px 4px #25630f; border: 1px solid #fff; }
+.upgrade .btn_button a.btn_other{ border: 1px solid #b9b9b9; background-color: #f0f0f0; color: #000; box-shadow: inset 0px 1px 1px #ddd; }
+#skip{float: left; padding: 0px;}
+.upgrade .btn_button a.btn_other:hover { background-color: #fff; color: #000; }
+.upgrade .btn_button a.btn_other:active { background-color: #a3a3a3; color: #000; box-shadow: inset 2px 2px 2px #999; }
+
+
+.upgrade .btn_button a.btn_skip{display: none;border:0;background: none;box-shadow: none;color: #0063d3;}
+.upgrade .btn_button a.btn_skip:hover,.upgrade .btn_button a.btn_skip:active{color: #0063d3;box-shadow: none;background: none;text-decoration: underline;}
+
+
+.latest{padding:25px 15px 5px 132px;height: 102px;line-height: 102px;overflow: hidden;background: url(../images/gamebox_latest_bg.jpg) no-repeat 15px 25px;}
+.latest p{ word-wrap: break-word;line-height: 20px;display: inline-block;}
+.about{position: relative;width: 388px;height: 230px;background: url(../images/gamebox_about_bg.jpg) no-repeat;}
+.about_ico{position: absolute;top: 5px;left: 50%;margin-left: -30px;width: 60px;height: 60px;}.about_ico img{width: 60px;height: 60px;}
+.about_txt{position: absolute;left: 0;top: 78px;width: 388px;text-align: center;line-height: 20px;color: #cfcfcf;}
+.about_txt a{color: #116dc7;}.about_txt a:hover{color: #116dc7;text-decoration: underline;}
+
+.about_btn{position: absolute;left: 50%;top: 148px;margin-left: -72px;display: inline-block;width: 144px;height: 60px;text-align: center;line-height: 60px;font-size: 18px;background: url(../images/gamebox_about_btn.png) no-repeat 0 0;color: #fff;font-family: Microsoft YaHei;text-shadow: 0 0 5px #000;}
+.about_btn:hover{background-position: 0 -60px;}
+.about_btn:active{background-position: 0 -120px;}
