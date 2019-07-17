@@ -1,0 +1,10 @@
+{
+    "targets"            : {
+        "web-client": {
+            "type" : "static",
+            "hosts": "*.oasgames.com",
+            "cpu": 512,
+            "memory": 1024
+        }
+    }
+}
