@@ -17,16 +17,26 @@ $fbAppList = [
     'lotr'     => '340651019346903',
     'narutode' => '1538179059837850',
     'narutoen' => '447973262074550',
-    'narutoes' => '1512682705727003',
+    'narutoes' => '231602602186835',
     'narutofr' => '562265367280905',
     'narutoit' => '1074884879203121',
-    'narutopl' => '1065635026788056',
-    'narutopt' => '951098834965349',
+    'narutopl' => '231602602186835',
+    'narutopt' => '231602602186835',
     'narutotr' => '458874980963094',
 ];
 
 $gameCode    = $_REQUEST['gameid'];
 $gameFbAppId = (isset($fbAppList[$gameCode])) ? $fbAppList[$gameCode] : '447973262074550';
+
+$specialGameCode = $CONFIG['specicalGameCodes'];
+
+if(in_array($gameCode, $specialGameCode, true)) {
+    $host = rtrim($CONFIG['host'],"/");
+    $redirectUrl = $host . $_SERVER['REQUEST_URI'];
+    if($_SERVER['HTTP_HOST'] !== 'www.oasgames.com') {
+        header('Location:' . $redirectUrl);
+    }
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
