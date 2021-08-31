@@ -26,6 +26,17 @@ $fbAppList = [
 ];
 $gameCode = $_REQUEST['gameid'];
 $gameFbAppId = (isset($fbAppList[$gameCode]))? $fbAppList[$gameCode] : '231602602186835';
+
+
+$specialGameCode = $CONFIG['specicalGameCodes'];
+
+if(in_array($gameCode, $specialGameCode, true)) {
+    $host = rtrim($CONFIG['host'],"/");
+    $redirectUrl = $host . $_SERVER['REQUEST_URI'];
+    if($_SERVER['HTTP_HOST'] !== 'gamebox3.creaction-network.com') {
+        header('Location:' . $redirectUrl);
+    }
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">

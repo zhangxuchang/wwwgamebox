@@ -32,7 +32,7 @@ $specialGameCode = $CONFIG['specicalGameCodes'];
 if(in_array($gameCode, $specialGameCode, true)) {
     $host = rtrim($CONFIG['host'],"/");
     $redirectUrl = $host . $_SERVER['REQUEST_URI'];
-    if($_SERVER['HTTP_HOST'] !== 'www.oasgames.com') {
+    if($_SERVER['HTTP_HOST'] !== 'gamebox3.creaction-network.com') {
         header('Location:' . $redirectUrl);
     }
 }
